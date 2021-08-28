@@ -1,7 +1,6 @@
 nav{
     width: 100%;
     height:auto;
-    /* background-color: #000000b5; */
     position: fixed;   
     text-align: center;
 }
@@ -57,12 +56,16 @@ video{
 
 }
 .about_content{
-    height: 100vh;
+    height: 100%;
     background-color: #000000b5;
     color: white;
     display: flex;
     justify-content: space-between;
     padding: 70px;
+}
+
+.navbar-toggle{
+    display: none;
 }
 @media (max-width:870px){
     nav ul li{
@@ -80,5 +83,20 @@ video{
     }
     .contact_div img{
         width: 100vw;
+    }
+    .navbar-toggle{
+        display:block;
+    }
+    nav{
+        z-index:999;
+    }
+    .main_nav{
+        display:none;
+        background-color: black;
+        color:white;
+        text-align: center;
+    }
+    .open{
+        display:block
     }
 }
