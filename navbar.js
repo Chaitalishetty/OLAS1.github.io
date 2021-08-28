@@ -8,4 +8,14 @@ navbar=()=>{
         <li><a href="gallery.html">Gallery</a></li>
     </ul>
 </nav>`;
+
 }
+    
+function closeNav() {
+    const mediaQuery=window.matchMedia("(max-width:870px)");
+    if (mediaQuery.matches){
+      document.querySelector("ul").style.display = "none";
+      // document.querySelector(".dashboard_container").style.marginLeft= "0";
+      // document.querySelector(".dashboard_container").style.width = "100vw";
+    }
+  }

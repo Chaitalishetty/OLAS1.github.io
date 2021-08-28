@@ -36,6 +36,7 @@ video{
 }
 .contact_content{
     background-color: #000000b5;
+    height: 100vh;
 }
 .contact_div div{
     width: 50vw;
@@ -55,6 +56,14 @@ video{
     width: 100%;
 
 }
+.about_content{
+    height: 100vh;
+    background-color: #000000b5;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 70px;
+}
 @media (max-width:870px){
     nav ul li{
         display: flex;  
@@ -62,11 +71,14 @@ video{
     #header{
         position: absolute;
     }
-    nav ul{
-        display: none;
-    }
     .content{
         padding: 10px 0px 0px 0px;
 
+    }
+    .contact_form{
+        position: absolute;
+    }
+    .contact_div img{
+        width: 100vw;
     }
 }
